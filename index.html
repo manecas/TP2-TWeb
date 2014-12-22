@@ -6,21 +6,104 @@
 <title>TRABALHO</title>
 </style>
 <link href="TRABALHO.css" rel="stylesheet" type="text/css" />
+
+
+
+<script src="jquery-1.11.1.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#slideshow').click(function(){
+	
+	function slideSwitch(){
+		var $activa=$('#slideshow img.active');
+		/*Aqui tem o ex 2.2 */
+		if($activa.next().length==1)
+		{
+		var $proxima=$activa.next();/*Já estava antes do 2.2 */
+		}else
+		{
+			var $proxima=$('#slideshow img:first');
+		}
+		/*Acaba aqui o 2.2 */
+		
+		/*exercicio2.5*/
+		$activa.addClass('last-active');
+		$proxima.addClass('active')
+		.css({opacity:0.0})
+		.animate({opacity:1.0},2000,function(){
+		$activa.removeClass('active last-active');
+		
+	});
+	};
+	setInterval(slideSwitch,3000);
+	});
+	
+	
+		
+    
+});
+
+
+</script>
+
+
+
 </head>
 
 
 <body>
+<<<<<<< HEAD
 <h1>Vila Nova do Porto</h1>
 <nav>       
 		<ul>
+=======
+
+
+
+<div id= "conteudo">
+<h1><img src="viladoporto1927-br.jpg" width="170" height="150" align="absmiddle" />Vila do Porto <img src="viladoporto1927-br.jpg" alt="" width="170" height="150" align="absmiddle" /></h1>
+<div id="global">
+    <ul>
+>>>>>>> origin/master
 			<li><a href="#">Início</a></li>
             <li><a href="#">História</a></li>
-			<li><a href="#">Junta de Freguesia</a></li>
+			<li><a href="#">Junta de Freguesia</a>
             	<ul>
+						<li><a href="http://www.google.com">Presidente</a></li>
+						<li><a href="#">Contactos</a></li>
+				</ul>
+            </li>
 				<li><a href="#">Assembleia Geral</a></li>
                 <li><a href="#">Pontos de Turismo</a></li>
+<<<<<<< HEAD
 					</ul>
 			<li><a href="#">Contactos</a></li>
 	              </ul>
+=======
+				
+		</ul>
+
+
+		</div>
+        
+        
+        
+<div id="slideshow">    
+<img src="sm1.jpg" alt="" width="728" height="375" class="active" />     
+<img src="sm2.jpg" alt="" width="728" height="375"/>     
+<img src="sm3.jpg" alt="" width="728" height="375"/>     
+<img src="sm4.jpg" alt="" width="728" height="375"/>     
+<img src="sm5.jpg" alt="" width="728" height="375"/>     
+<img src="sm6.jpg" alt="" width="728" height="375"/> 
+  
+</div> 
+        
+        
+        
+        
+        
+</div>
+>>>>>>> origin/master
 </body>
 </html>
