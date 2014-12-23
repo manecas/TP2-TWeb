@@ -10,31 +10,6 @@ h1{
 	font-weight:900;
 	font-variant:normal;
 	text-align: center;
-<<<<<<< HEAD
-
-}
-
-body{
-	background-image:url(Azoren_Corvo_Vila_Nova.jpg);
-	background-attachment: scroll;
-	height:auto;
-}
-
-
-#conteudo{
-	position: absolute;
-    width: 900px;
-	height:1500px;
-	bottom:0px;
-    top: 0px;
-    margin-left: -450px;
-    background-color: #FFF;
-    z-index: 2;
-    box-shadow: 0 0 4px 2px #555 inset;
-    left: 50%;
-    padding: 10px;
-=======
->>>>>>> origin/master
 }
 /* cenas do menu */
 
@@ -137,15 +112,9 @@ body{
 }
 
 #slideshow img{
-<<<<<<< HEAD
-	position:absolute;
-	top:-296px;
-	left:-169px;
-=======
 	position:relative; /* nao podes user position obsolutes dentro do conteudo */
 	top:32px;
 	left:-179px;
->>>>>>> origin/master
 	right:auto;
 	z-index:2;
 	alignment-adjust:central;
