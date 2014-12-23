@@ -105,26 +105,26 @@ body{
 	position:relative;
 	width:500px;
 	margin:100px auto;
-	left: auto;
-	right: auto;
-	alignment-adjust:central;
-	text-align: center;
 }
 
 #slideshow img{
-	position:relative; /* nao podes user position obsolutes dentro do conteudo */
-	top:32px;
-	left:-179px;
-	right:auto;
-	z-index:2;
-	alignment-adjust:central;
-	width: 844px;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:8;
 }
 #slideshow img.active{
-	z-index:2;
+	z-index:10;
 }
 
 #slideshow img.last-active{
-	z-index:2;
+	z-index:9;
 }
+<img src="1" class="active"/>
+<img src="2" class="active"/>
+<img src="3" class="active"/>
+<img src="4" class="active"/>
+<img src="5" class="active"/>
+<img src="6" class="active"/>
+
 /*fim slide show*/
