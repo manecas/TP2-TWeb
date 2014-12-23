@@ -10,6 +10,7 @@ h1{
 	font-weight:900;
 	font-variant:normal;
 	text-align: center;
+<<<<<<< HEAD
 
 }
 
@@ -32,7 +33,10 @@ body{
     box-shadow: 0 0 4px 2px #555 inset;
     left: 50%;
     padding: 10px;
+=======
+>>>>>>> origin/master
 }
+/* cenas do menu */
 
 
 #global {
@@ -99,11 +103,29 @@ body{
 			
 		}
 		
-/*Imagens em Slideshow*/
 
+/* fim de cenas do menu */
 
-body{margin:0;}
+body{
+	background-image:url(Azoren_Corvo_Vila_Nova.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
 
+#conteudo{
+	position: absolute;
+    width: 900px;;
+    top: 0px;
+    margin-left: -450px;
+    background-color: #FFF;
+    z-index: 2;
+    box-shadow: 0 0 5px 2px #555;
+    left: 50%;
+    padding: 10px;
+}
+
+/* inicio slide show */
 #slideshow{
 	position:relative;
 	width:500px;
@@ -115,26 +137,25 @@ body{margin:0;}
 }
 
 #slideshow img{
+<<<<<<< HEAD
 	position:absolute;
 	top:-296px;
 	left:-169px;
+=======
+	position:relative; /* nao podes user position obsolutes dentro do conteudo */
+	top:32px;
+	left:-179px;
+>>>>>>> origin/master
 	right:auto;
-	z-index:8;
+	z-index:2;
 	alignment-adjust:central;
 	width: 844px;
 }
 #slideshow img.active{
-	z-index:10;
+	z-index:2;
 }
 
 #slideshow img.last-active{
-	z-index:9;
+	z-index:2;
 }
-<img src="1" class="active"/>
-<img src="2" class="active"/>
-<img src="3" class="active"/>
-<img src="4" class="active"/>
-<img src="5" class="active"/>
-<img src="6" class="active"/>
-
-/*Termina aqui*/
+/*fim slide show*/
