@@ -23,7 +23,7 @@ body{
 #conteudo{
 	position: absolute;
     width: 900px;
-    height: auto;
+	height:1500px;
 	bottom:0px;
     top: 0px;
     margin-left: -450px;
@@ -116,8 +116,8 @@ body{margin:0;}
 
 #slideshow img{
 	position:absolute;
-	top:32px;
-	left:-179px;
+	top:-296px;
+	left:-169px;
 	right:auto;
 	z-index:8;
 	alignment-adjust:central;
