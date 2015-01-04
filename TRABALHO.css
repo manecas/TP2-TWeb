@@ -2,7 +2,7 @@
 /* CSS Document */
 
 h1{
-	color:#0000FF;
+	color:#0033FF;
 	alignment-adjust:central;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size:80px;
@@ -11,9 +11,52 @@ h1{
 	font-variant:normal;
 	text-align: center;
 }
+
+h2{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-variant:normal;
+    color:#0033FF;
+    text-align:left;
+    font-size:25px;
+}
+
+/*inicio classe que afeta os textos*/
+.texto{
+    font-family: "Times New Roman", Times, serif;
+    text-align: justify;
+}
+/*fim classe que afeta os textos*/
+
+
+/*inicio afeta imagem na secção história*/
+#imagemhist{
+    padding: 10px;
+    float:right;
+    width:250;
+    height:250;
+}
+/*fim afeta imagem na secção história*/
+
+
+/*inicio afeta imagem na secção mapa de localização*/
+#mapalocalizacao{
+    align-content: center;
+}
+
+#mapalocalizacao:hover{
+    opacity: 0.6;
+}
+/*inicio afeta imagem na secção mapa de localização*/
+
+/* inicio afeta tabela na secção presidencia */
+#presidencia tr td{
+    align-content: center;
+    padding:10px;
+    font-family: "Times New Roman", Times, serif;
+}
+/* fim afeta tabela na secção presidencia */
+
 /* cenas do menu */
-
-
 #global {
 	margin: 0px auto; 
 	text-align: center;
@@ -26,8 +69,8 @@ h1{
 }
 #global ul{
 	background-color: #CECECE;
-	padding: 0px 0px;
-	border-radius:25px;
+	padding: 0px;
+	border-radius:3px;
 	list-style:none;
 	display:inline-block;
 	position:relative; 
@@ -37,11 +80,13 @@ h1{
 		float:left;
 	}
 #global ul li:hover{
-			background:#4b545f;
+        background:#4b545f;
+        border-radius:2px;
             
 		}
 #global ul li:hover a{
-			color:#FFF;
+        color:#FFF;
+        border-radius:3px;
 		}
 	
 #global ul li a{
@@ -56,8 +101,7 @@ h1{
 		padding:2px;
 		position:absolute;
 		top:100%;
-		border-radius:0px;
-        box-shadow:black;
+		border-radius:3px;
 	}
 #global ul ul li{
         width: 194px;
@@ -72,13 +116,14 @@ h1{
 		}
 #global ul li a:hover{
 			background:#4b545f;
+            border-radius:2px;
 		}
 		
 #global ul ul ul{
 			position:absolute;
 			left:100%;
 			top:0%;
-            box-shadow:black;
+            border-radius:3px;
             padding: 2px;
 			}
 		
@@ -94,12 +139,12 @@ body{
 
 #conteudo{
 	position: absolute;
-    width: 900px;;
+    width: 900px;
     top: 0px;
     margin-left: -450px;
     background-color: #FFF;
     z-index: 2;
-    box-shadow: 0 0 5px 2px #555;
+    box-shadow: 0px 0px 5px 2px #555;
     left: 50%;
     padding: 10px;
 }
