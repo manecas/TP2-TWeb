@@ -11,28 +11,31 @@
 </head>
 <body>
 <div id= "conteudo"> <!-- Tem de estar TUDO dentro disto para funcionar! -->
-	<h1><img src="viladoporto1927-br.jpg" width="170" height="150" align="absmiddle" />Vila Nova do Porto</h1>
+	<h1><img src="viladoporto1927-br.jpg" width="170" height="150" align="absmiddle" />Vila do Porto</h1>
 	<div id="global">
     <ul>
 		<li><a href="index.html">Início</a></li>
-		<li><a href="Historia.html">Serviços</a>
-        <ul>
-				<li><a href="Accaosocial.html">Acção Social</a></li>
-				<li><a href="Desporto.html">Desporto</a></li>
-                
-                <li><a href="Ambiente.html">Ambiente</a></li>
-                
-                <li><a href="Educacao.html">Educação</a></li>
-			</ul>
-            </li>
-		<li><a href="#">Junta de Freguesia</a>
+        
+		      <li><a href="#">Junta de Freguesia</a>
+          <ul>
+				<li><a href="Historia.html">História</a></li>
+				<li><a href="Estrutura.html">Estrutura</a></li>
+                <li><a href="Pessoal.html">Pessoal</a></li>
+                <li><a href="Mapalocalizacao.html">Mapa de Localização</a></li>
+          </ul>
+              </li>
+        
+		<li><a href="#">Informações Úteis</a>
 			<ul>
-				<li><a href="Presidente.html">Vila do Porto</a></li>
-				<li><a href="Contactos.html">Contactos</a></li>
+				<li><a href="Escolas.html">Escolas</a></li>
+				<li><a href="Farmacias.html">Farmácias</a></li>
+                <li><a href="Transportes.html">Transportes</a></li>
+                <li><a href="Ligacoesuteis.html">Ligações Úteis</a></li>
 			</ul>
 		</li>
-			<li><a href="Assembleia.html">Assembleia Geral</a></li>
-			<li><a href="#">Pontos de Turismo</a></li>
+			<li><a href="Galeriaturismo.html">Turismo/Galeria</a></li>
+        
+			<li><a href="Contactos.html">Contactos</a></li>
 	</ul>
 	</div>   <!-- fecha id global --> 
     
@@ -70,17 +73,46 @@ Santa Maria - Açores - Portugal<br>
 
 <form action= "mailto:adminviladoporto@gmail.com" method="post" name="Opinião">
 <fieldset>
-  <legend> Mande-nos aqui a sua opinião, ou alguma duvida que tenha tido</legend><br>
+  <legend>Dê-nos uma sugestão para que possamos melhorar o nosso serviço</legend><br>
 
+Nome completo:<br>
+<input type="text" name="nomecompleto" value="" size="40" required><br><br>
+    
+Sexo:<br>
+<input type="radio" name="sexo" value="Masculino" checked>Masculino&nbsp;
+<input type="radio" name="sexo" value="Feminino">Feminino<br><br>
+    
+Número de Identificação:<br>
+<input type="number" name="numeroidentificacao" value="" size="8" required><br><br>
+    
+Morada:
+<input type="text" name="morada" value="" required>
+Nº:
+<input type="number" name="numero" value="" size="5" required><br><br>
+    
+Código Postal:<br>
+<input type="number" name="codigopostal1" value="" max="4" min="4" required>&nbsp;-&nbsp;
+<input type="number" name="codigopostal1" value="" max="3" min="3" required><br><br>
 
-Descrição<br>
-    <textarea name="desc" cols="65" rows="4"></textarea>
-    </p>
-  <p> Data:
-  <input type="date" name="data" value="2015-01-06" min="2015-01-06" max="2016-01-10">
-  </p>
-  <input name="" type="submit" value="enviar" />
-  </legend>
+<select name="Assunto" required>
+<option value="Assunto" disabled>Escolha o assunto abaixo</option>
+<option value="Limpeza">Limpeza</option>
+<option value="Obras">Obras</option>
+<option value="Educação">Educação</option>
+<option value="Saúde">Saúde</option>
+<option value="Segurança">Segurança</option>
+</select><br><br>
+
+Outro assunto:<br>
+<input type="text" name="outro" value="" size="20"><br><br>
+    
+E-mail:<br>
+<input type="email" name="e-mail" value="" required><br><br>
+
+Sugestão<br>
+<textarea name="desc" cols="65" rows="4" required></textarea><br><br>
+    
+<input name="" type="submit" value="Enviar" />
 </fieldset>
 </form>
 
